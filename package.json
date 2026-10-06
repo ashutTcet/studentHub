@@ -1,0 +1,19 @@
+{
+  "name": "studenthub",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm run start",
+    "load:test": "cd server && npm run load:test",
+    "seed:demo": "npm run seed:demo -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

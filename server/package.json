@@ -1,0 +1,36 @@
+{
+  "name": "studenthub-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "check:port": "node scripts/check-port.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "load:test": "node scripts/load-test.js",
+    "seed:demo": "node scripts/seed-demo.js"
+  },
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.2",
+    "connect-timeout": "^1.9.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^11.3.0",
+    "mongoose": "^9.10.3",
+    "multer": "^2.4.0",
+    "pdfkit": "^0.20.2",
+    "pino": "^10.4.0",
+    "pino-http": "^11.0.0",
+    "rate-limit-redis": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
